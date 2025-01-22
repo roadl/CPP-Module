@@ -17,5 +17,6 @@ public:
 	~Contact();
 
 	void	print_short_form(int idx);
-	void	print_all();
+	void	print_detail();
+	bool	is_valid();
 };

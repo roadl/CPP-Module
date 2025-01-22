@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jin-yong-uk <jin-yong-uk@student.42.fr>    +#+  +:+       +#+        */
+/*   By: yojin <yojin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:39:35 by jin-yong-uk       #+#    #+#             */
-/*   Updated: 2024/11/04 11:45:16 by jin-yong-uk      ###   ########.fr       */
+/*   Updated: 2025/01/22 17:33:37 by yojin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	main(int argc, char **argv)
 		for (int j = 0; argv[i][j]; j++)
 		{
 			std::cout << static_cast<char>(std::toupper(argv[i][j]));
-			
 		}
 	}
 	std::cout << std::endl;

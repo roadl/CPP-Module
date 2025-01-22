@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jin-yong-uk <jin-yong-uk@student.42.fr>    +#+  +:+       +#+         #
+#    By: yojin <yojin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/12 17:18:23 by yojin             #+#    #+#              #
-#    Updated: 2024/11/04 11:44:05 by jin-yong-uk      ###   ########.fr        #
+#    Updated: 2025/01/22 17:29:23 by yojin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,16 +15,12 @@ CFLAGS = -Wall -Wextra -Werror
 LDIR = 
 HEADER = 
 SRCS = megaphone.cpp
-OBJS = $(SRCS:.cpp=.o)
 NAME = megaphone
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(SRCS)
 	$(CC) $(CFLAGS) $^ -o $@
-
-%.o: %.c $(HEADER)
-	$(CC) $(CFLAGS) -c $< -o $@ -I$(LDIR)
 
 re: fclean all
 

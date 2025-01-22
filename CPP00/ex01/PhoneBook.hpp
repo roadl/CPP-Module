@@ -9,6 +9,7 @@ class PhoneBook
 		PhoneBook();
 		~PhoneBook();
 
-		void	add_contack();
-		void	search();
+		void	add_contact(Contact c);
+		void	list_all();
+		void	print_contact(int index);
 };
